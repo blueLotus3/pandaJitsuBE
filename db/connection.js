@@ -1,8 +1,8 @@
 require("dotenv").config();
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const { MongoUN } = process.env
-const { MongoPWD } = process.env
-const uri = `mongodb+srv://${MongoUN}:${MongoPWD}@cluster0.gpzrs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+// const { MongoUN } = process.env
+// const { MongoPWD } = process.env
+const uri = process.env.MONGO_URI;
 const mongoose = require('mongoose');
 const db = mongoose.connection;
 
