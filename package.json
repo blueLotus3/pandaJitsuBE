@@ -8,6 +8,10 @@
     "dev": "cross-env NODE_ENV=development nodemon server.js",
     "gear:seed": "node ./db/GearSeed.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueLotus3/pandaJitsuBE.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
